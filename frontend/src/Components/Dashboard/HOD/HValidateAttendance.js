@@ -93,11 +93,11 @@ const HValidateAttendance = () => {
         }
     }, [contract]);
     return (
-        <div className='flex'>
+        <div className='hvalidateattendance-main'>
             <HSidebar />
-            <div className="fviewattendance-container">
+            <div className="hvalidateattendance-container">
             <h2>Attendance Data</h2>
-            <table>
+            <table className='hvalidateattendance-table'>
                 <thead>
                     <tr>
                         <th>Subject</th>

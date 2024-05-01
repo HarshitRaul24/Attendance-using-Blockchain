@@ -52,6 +52,7 @@ const StudentSignup = () => {
             <div className="student-signup-form">
                 <h1>Student Signup</h1>
                 <form onSubmit={handleSubmit}>
+                    <div className="student-inputs">
                     <input type="text" name="name" placeholder="Enter Your Name" onChange={handleChange} />
                     <input type="text" name="stuId" placeholder="Enter Student ID" onChange={handleChange} />
                     <input type="email" name="email" placeholder="Enter Your Email" onChange={handleChange} />
@@ -59,10 +60,11 @@ const StudentSignup = () => {
                     <input type="number" name="rollNo" placeholder="Enter Roll Number" onChange={handleChange} />
                     <input type="password" name="password" placeholder="Enter Your Password" onChange={handleChange} />
                     <input type="password" name="confirmPassword" placeholder="Confirm Your Password" onChange={handleChange} />
-                    <input type="submit" value="Signup" />
+                    <button>Submit</button>
+                    </div>
                 </form>
                 <p>
-                    Already Have Account? <Link to="/">Login</Link>
+                    Already Have Account? <Link to="/">Login Here</Link>
                 </p>
             </div>
         </section>

@@ -97,21 +97,27 @@ const Login = () => {
                     {selectedButton === "student" && (
                         <>
                             <form onSubmit={handleSubmit}>
-                                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} />
-                                <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleInputChange} />
-                                <button type="submit">Login</button>
+                                <div className="login-form-input">
+                                    <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} />
+                                    <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleInputChange} />
+                                    <button type="submit">Login</button>
+                                </div>
+
                             </form>
-                            <p>Don't have an account? <Link to="/studentsignup">Register</Link></p>
+                            <p>Don't have an account? <Link to="/studentsignup">Register Now</Link></p>
                         </>
                     )}
                     {selectedButton === "faculty" && (
                         <>
                             <form onSubmit={handleFacultySubmit}>
-                                <button type="button" onClick={handleGetMetamaskAddress}>Get MetaMask Address</button>
-                                <input type="text" name="metamaskId" placeholder="Enter Your MetaMask Address" value={formData.metamaskId} onChange={handleInputChange} />
-                                <button type="submit">Login</button>
+                                <div className="login-form-input">
+                                    <button type="button" onClick={handleGetMetamaskAddress}>Get MetaMask Address</button>
+                                    <input type="text" name="metamaskId" placeholder="Enter Your MetaMask Address" value={formData.metamaskId} onChange={handleInputChange} />
+                                    <button type="submit">Login</button>
+                                </div>
+
                             </form>
-                            <p>Don't have an account? <Link to="/facultysignup">Register</Link></p>
+                            <p>Don't have an account? <Link to="/facultysignup">Register Now</Link></p>
                         </>
                     )}
                 </div>

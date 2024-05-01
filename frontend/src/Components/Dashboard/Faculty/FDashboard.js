@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import FSidebar from "./FSidebar"
@@ -36,21 +36,21 @@ const FDashboard = () => {
 
     return (
         <>
-        <div className='flex'>
-        <FSidebar/>
-        <section className="faculty-dashboard-container">
-            <div className="dash-header">
-                <img src={user} height="200px" alt="" />
-                <div className="header-dash-containt">
-                <h1>Name</h1>
-                <h1>Faculty</h1>
-                </div>
+            <div className='fdashboard-main'>
+                <FSidebar />
+                <section className="faculty-dashboard-container">
+                    <div className="dash-header">
+                        <img src={user} alt="" />
+                        <div className="header-dash-containt">
+                            <h1>Name</h1>
+                            <h1>Faculty</h1>
+                        </div>
+                    </div>
+                    <div className="dash-body">
+                        <h5>Name</h5>
+                    </div>
+                </section>
             </div>
-            <div className="dash-body">
-                <h5>Name</h5>
-            </div>
-        </section>
-        </div>
         </>
     )
 }

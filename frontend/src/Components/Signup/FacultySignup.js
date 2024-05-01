@@ -62,30 +62,35 @@ const FacultySignup = () => {
         <section className='faculty-signup-container'>
             <div className='faculty-signup-form'>
                 <h1>Faculty Signup</h1>
+
                 <form >
-                    <input type="text" name="name" placeholder='Enter Your Name' onChange={handleChange} />
-                    <input type="text" name="facId" placeholder='Enter Faculty ID' onChange={handleChange} />
-                    <input type="email" name="email" placeholder='Enter Your Email' onChange={handleChange} />
-                    <input type="text" name="phone" placeholder='Enter Your Mobile Number' onChange={handleChange} />
-                    <select name="subject" onChange={handleChange}>
-                        <option value="">Select The Subject</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="CP">CP</option>
-                        <option value="BEE">BEE</option>
-                    </select>
-                    <select name="designation" onChange={handleChange}>
-                        <option value="">Select Your Designation</option>
-                        <option value="Asst. Professor">Asst. Professor</option>
-                        <option value="Professor">Professor</option>
-                        <option value="HOD">HOD</option>
-                    </select>
-                    <button type="button" onClick={handleGetMetamaskAddress}>Get MetaMask Address</button>
-                    <input type="text" name="metamaskId" placeholder="Enter Your MetaMask Address" value={formData.metamaskId} onChange={handleChange} />
-                    <button onClick={handleFacultySubmit}>submit</button>
+                    <div className="faculty-inputs">
+                        <input type="text" name="name" placeholder='Enter Your Name' onChange={handleChange} />
+                        <input type="text" name="facId" placeholder='Enter Faculty ID' onChange={handleChange} />
+                        <input type="email" name="email" placeholder='Enter Your Email' onChange={handleChange} />
+                        <input type="text" name="phone" placeholder='Enter Your Mobile Number' onChange={handleChange} />
+                        <select name="subject" onChange={handleChange}>
+                            <option value="">Select The Subject</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="CP">CP</option>
+                            <option value="BEE">BEE</option>
+                        </select>
+                        <select name="designation" onChange={handleChange}>
+                            <option value="">Select Your Designation</option>
+                            <option value="Asst. Professor">Asst. Professor</option>
+                            <option value="Professor">Professor</option>
+                            <option value="HOD">HOD</option>
+                        </select>
+                        <button type="button" onClick={handleGetMetamaskAddress}>Get MetaMask Address</button>
+                        <input type="text" name="metamaskId" placeholder="Enter Your MetaMask Address" value={formData.metamaskId} onChange={handleChange} />
+                        <button onClick={handleFacultySubmit}>Submit</button>
+                    </div>
                 </form>
+
+
                 <p>
-                    Already Have Account? <Link to="/">Login</Link>
+                    Already Have Account? <Link to="/">Login Here</Link>
                 </p>
             </div>
         </section>

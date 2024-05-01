@@ -6,7 +6,7 @@ import FSidebar from "./FSidebar"
 
 const FValidateStudent = () => {
     return (
-        <div className='flex'>
+        <div className='validatestudent-main'>
             <FSidebar/>
             <div className="validatestudent-container">
             <h1>Validate Student</h1>

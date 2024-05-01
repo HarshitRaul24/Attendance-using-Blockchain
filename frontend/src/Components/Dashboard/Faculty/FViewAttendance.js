@@ -62,11 +62,11 @@ const FViewAttendance = () => {
         }
     }, [contract]);
     return (
-        <div className='flex'>
+        <div className='fviewattendance-main'>
             <FSidebar />
             <div className="fviewattendance-container">
                 <h2>Attendance Data</h2>
-                <table>
+                <table className='fviewattendance-table'>
                     <thead>
                         <tr>
                             <th>Subject</th>

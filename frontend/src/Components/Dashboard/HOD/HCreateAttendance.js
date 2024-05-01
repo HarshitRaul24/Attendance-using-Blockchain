@@ -5,11 +5,11 @@ import HSidebar from "./HSidebar"
 
 const HCreateAttendance = () => {
     return (
-        <div className='flex'>
+        <div className='hcreateattendance-main'>
             <HSidebar/>
-            <div className="fviewattendance-container">
+            <div className="hcreateattendance-container">
                 <h1>View Attendance</h1>
-                <table>
+                <table className='hcreateattendance-table'>
                     
                 </table>
             </div>

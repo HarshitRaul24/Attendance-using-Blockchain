@@ -32,11 +32,11 @@ const HDashboard = () => {
     // }, []);
     return (
         <>
-        <div className='flex'>
+        <div className='hdashboard-main'>
         <HSidebar/>
-        <section className="faculty-dashboard-container">
+        <section className="hod-dashboard-container">
             <div className="dash-header">
-                <img src={user} height="200px" alt="" />
+                <img src={user} alt="" />
                 <div className="header-dash-containt">
                 <h1>Name</h1>
                 <h1>Faculty</h1>

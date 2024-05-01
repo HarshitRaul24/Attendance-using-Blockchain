@@ -6,11 +6,11 @@ import SSidebar from "./SSidebar"
 
 const SMarkAttendance = () => {
     return (
-        <div className='flex'>
+        <div className='smarkattendance-main'>
             <SSidebar/>
             <div className="smarkattendance-container">
                 <h1>Mark Attendance</h1>
-                <table>
+                <table className='smarkattendance-table'>
                     
                 </table>
             </div>

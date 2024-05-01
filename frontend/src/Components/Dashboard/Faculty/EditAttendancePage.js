@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import './Faculty.css'
 const EditAttendancePage = ({ attendanceData }) => {
     const [editedData, setEditedData] = useState([]);
 
@@ -27,35 +27,43 @@ const EditAttendancePage = ({ attendanceData }) => {
     };
 
     return (
-        <div>
-            <h2>Edit Attendance</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Date</th>
-                        <th>Slot</th>
-                        <th>Attendance</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {editedData.map((record, index) => (
-                        <tr key={index}>
-                            <td>{record.subject}</td>
-                            <td>{record.date}</td>
-                            <td>{record.slot}</td>
-                            <td>
-                                <select value={record.attendance} onChange={(e) => handleEdit(index, 'attendance', e.target.value)}>
-                                    <option value="P">Present</option>
-                                    <option value="A">Absent</option>
-                                </select>
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-            <button onClick={handleSubmit}>Submit</button>
-        </div>
+        <section className="editattendancepage-main">
+            <div className='editattendancepage-container'>
+                <h2>Edit Attendance</h2>
+                <div className="editattendancepage-table">
+
+                    <table>
+                        <thead>
+                            <tr className='editattendancepage-heading'>
+                                <th>Subject</th>
+                                <th>Date</th>
+                                <th>Slot</th>
+                                <th>Attendance</th>
+                            </tr>
+                        </thead>
+                        {/* <tbody>
+                        {editedData.map((record, index) => (
+                            <tr key={index}>
+                                <td>{record.subject}</td>
+                                <td>{record.date}</td>
+                                <td>{record.slot}</td>
+                                <td>
+                                    <select value={record.attendance} onChange={(e) => handleEdit(index, 'attendance', e.target.value)}>
+                                        <option value="P">Present</option>
+                                        <option value="A">Absent</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody> */}
+                    </table>
+                </div>
+                <div className="editattendancepage-submit">
+
+                <button onClick={handleSubmit}>Submit</button>
+                </div>
+            </div>
+        </section>
     );
 };
 

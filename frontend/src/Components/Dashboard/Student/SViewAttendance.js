@@ -63,11 +63,11 @@ const SViewAttendance = () => {
         }
     }, [contract]);
     return (
-        <div className='flex'>
+        <div className='sviewattendance-main'>
             <SSidebar />
-            <div className="fviewattendance-container">
+            <div className="sviewattendance-container">
                 <h2>Attendance Data</h2>
-                <table>
+                <table className='sviewattendance-table'>
                     <thead>
                         <tr>
                             <th>Subject</th>

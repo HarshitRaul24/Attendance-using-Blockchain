@@ -62,11 +62,11 @@ const HViewAttendance = () => {
         }
     }, [contract]);
     return (
-        <div className='flex'>
+        <div className='hviewattendance-main'>
             <HSidebar />
-            <div className="fviewattendance-container">
+            <div className="hviewattendance-container">
             <h2>Attendance Data</h2>
-                <table>
+                <table className='hviewattendance-table'>
                     <thead>
                         <tr>
                             <th>Subject</th>

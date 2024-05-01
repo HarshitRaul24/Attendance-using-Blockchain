@@ -85,23 +85,23 @@ const FCreateAttendance = () => {
     };
 
     return (
-        <div className='flex'>
+        <div className='fcreateattendance-main'>
             <FSidebar />
-            <div className="crateAttendance-container">
+            <div className="fcrateAttendance-container">
                 <div className="createAtten-header">
                     <button>Create Attendance</button>
                 </div>
-                <div>
-                    <form onSubmit={handleSubmit}>
+                <div className='createAtten-content'>
+                    <form onSubmit={handleSubmit} className='createAtten-form'>
                         <input type="text" name="slot" placeholder='Enter Slot of Attendance' value={formData.slot} onChange={handleChange} />
                         <input type="date" name="date" placeholder='Enter Date of Attendance' value={formData.date} onChange={handleChange} />
                         <input type="text" name="subject" placeholder='Enter Subject' value={formData.subject} onChange={handleChange} />
                         <button type="submit">Create</button>
                     </form>
                 </div>
-                <div>
+                <div className='createAtten-data'>
                     <h2>Attendance Data</h2>
-                    <table>
+                    <table className='createAtten-table'>
                         <thead>
                             <tr>
                                 <th>Subject</th>

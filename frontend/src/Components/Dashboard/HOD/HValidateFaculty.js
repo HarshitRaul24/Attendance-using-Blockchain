@@ -6,11 +6,11 @@ import HSidebar from "./HSidebar"
 
 const HValidateFaculty = () => {
     return (
-        <div className='flex'>
+        <div className='hvalidityfaculty-main'>
             <HSidebar/>
-            <div className="fviewattendance-container">
+            <div className="hvalidityfaculty-container">
                 <h1>Validate Faculty</h1>
-                <table>
+                <table className='hvalidityfaculty-table'>
                     
                 </table>
             </div>

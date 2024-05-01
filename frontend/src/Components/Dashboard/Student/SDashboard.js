@@ -34,11 +34,11 @@ const SDashboard = () => {
     
     return (
         <>
-        <div className='flex'>
+        <div className='sdashboard-main'>
         <SSidebar/>
-        <section className="faculty-dashboard-container">
+        <section className="sdashboard-container">
             <div className="dash-header">
-                <img src={user} height="200px" alt="" />
+                <img src={user} alt="" />
                 <div className="header-dash-containt">
                 <h1>Name</h1>
                 <h1>Faculty</h1>
