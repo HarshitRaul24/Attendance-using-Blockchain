@@ -1,0 +1,11 @@
+.faculty-dashboard-container{
+    width: 85%;
+}
+
+.flex{
+    display: flex;
+}
+
+.sidebar-container{
+    width: 15%;
+}
