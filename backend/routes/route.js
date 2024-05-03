@@ -169,6 +169,9 @@ router.get('/get-attendance', async (req, res) => {
 router.put('/attendance/:id', async (req, res) => {
     const { id } = req.params; // Attendance ID
     const { keyToUpdate, newValue } = req.body; // Key to update and its new value
+    console.log(id)
+    console.log(keyToUpdate)
+    console.log(newValue)
 
     try {
         // Find the attendance record by its ID
@@ -177,14 +180,15 @@ router.put('/attendance/:id', async (req, res) => {
         if (!attendance) {
             return res.status(404).json({ success: false, message: 'Attendance not found' });
         }
-
+        console.log(attendance)
         // Update the attendance object
         attendance.attendance[keyToUpdate] = newValue;
 
         // Save the updated attendance record
         await attendance.save();
-
+        console.log(attendance)
         res.status(200).json({ success: true, message: 'Attendance updated successfully' });
+        console.log(attendance)
     } catch (error) {
         console.error('Error updating attendance:', error);
         res.status(500).json({ success: false, message: 'Internal server error' });

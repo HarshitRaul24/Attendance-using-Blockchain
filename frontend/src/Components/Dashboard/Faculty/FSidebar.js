@@ -11,7 +11,7 @@ const FSidebar = () => {
                     <ul>
                         <li><Link to="/fdashboard">Dashboard</Link></li>
                         <li><Link to="/fcreateattendance">Create Attendance</Link></li>
-                        <li><Link to="/fvalidatestudent">Validate Student</Link></li>
+                        {/* <li><Link to="/fvalidatestudent">Validate Student</Link></li> */}
                         <li><Link to="/fviewattendance">View Attendance</Link></li>
                     </ul>
                 </div>

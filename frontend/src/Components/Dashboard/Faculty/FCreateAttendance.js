@@ -109,7 +109,7 @@ const FCreateAttendance = () => {
                                 <th>Slot</th>
                                 <th>Present</th>
                                 <th>Absent</th>
-                                <th>Action</th> {/* Added column for action button */}
+                                <th>Action</th> 
                             </tr>
                         </thead>
                         <tbody>
@@ -124,7 +124,7 @@ const FCreateAttendance = () => {
                                             <td>{record.slot}</td>
                                             <td>{presentKeys.join(', ')}</td>
                                             <td>{absentKeys.join(', ')}</td>
-                                            <td><button onClick={() => handleRowClick(record)}>View Details</button></td>
+                                            <td><button onClick={() => handleRowClick(record)}>Validate</button></td>
                                         </tr>
                                     )
                                 }
@@ -136,6 +136,5 @@ const FCreateAttendance = () => {
         </div>
     )
 }
-{/* <Link to={`/editattendance/${record._id}`}>Edit</Link> */}
 
 export default FCreateAttendance;
